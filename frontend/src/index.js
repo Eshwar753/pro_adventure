@@ -8,7 +8,6 @@ import store from './store';
 import './assets/styles/bootstrap.custom.css';
 import './assets/styles/index.css';
 import App from './App';
-import {PayPalScriptProvider} from '@paypal/react-paypal-js'
 import reportWebVitals from './reportWebVitals';
 import HomeScreens from './screens/HomeScreens';
 import ProductScreen from './screens/ProductScreen';
@@ -72,9 +71,7 @@ root.render(
   <React.StrictMode>
   <HelmetProvider>
   <Provider store={store}>
-  <PayPalScriptProvider deferLoading ={true}>
     <RouterProvider router={router} />
-  </PayPalScriptProvider>
   </Provider>
   </HelmetProvider>
   </React.StrictMode>
